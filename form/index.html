@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário universal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="screen">
+        <div class="left-side">
+            <img src="images/img.png" alt="">
+        </div>
+        <div class="right-side">
+            <h1>Crie uma conta</h1>
+            <form method="post" class="b7-validator">
+                <div class="form-item">
+                    <label for="">Nome</label>
+                    <input type="text" name="name" data-rules="required|min=2">
+                </div>
+                <div class="form-item">
+                    <label for="">E-mail</label>
+                    <input type="text" name="email" data-rules="required|email">
+                </div>
+                <div class="form-item">
+                    <label for="">Senha</label>
+                    <input type="password" name="senha" data-rules="required|min=6">
+                </div>
+                <div class="form-item-button">
+                    <input type="submit" value="Cadastrar">
+                </div>
+                <div class="form-item-span">
+                    <span>Já tem uma conta?</span>
+                    <a href="">Faça o login.</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>

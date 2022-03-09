@@ -1,0 +1,130 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            /*font-family: Arial, Helvetica, sans-serif;*/
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+}
+
+.screen {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img {
+    max-width: 600px;
+}
+
+.right-side {
+    width: 600px;
+    background-color: #DDD;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side h1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    color: #ff1c0b;
+}
+
+.right-side form {
+    flex: 5;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-item, .form-item-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    text-transform: uppercase;
+}
+
+.form-item input {
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+.form-item-button input {
+    height: 30px;
+    background-color: #ff1c0b;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+.form-item-span {
+    text-align: center;
+    padding: 5px;
+}
+
+.error {
+    color: #ff1c0b;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+    .screen {
+        flex-direction: column;
+    }
+
+    .left-side {
+        flex: 1;
+    }
+
+    .left-side img {
+        max-width: 250px;
+    }
+
+    .right-side {
+        flex: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .right-side form {
+        flex: 10;
+        display: flex;
+        align-items: center;
+    }
+    
+    .form-item, .form-item-button, .form-item-span {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .right-side {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}

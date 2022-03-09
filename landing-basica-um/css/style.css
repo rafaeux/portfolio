@@ -1,0 +1,388 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Classes auxiliares */
+
+.center {
+    max-width: 1280px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+/* ****************** */
+
+section.main {
+    position: relative;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 600px;
+}
+
+section.main .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+section.main header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+section.main .logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+section.main .desktop {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.main .desktop li {
+    display: flex;
+    align-items: center;
+}
+
+section.main .desktop li a {
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+section.main .conteudo-header {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+}
+
+section.main .conteudo-header h1, section.main .conteudo-header p, section.main .conteudo-header a {
+    margin: 10px 0;
+    z-index: 2;
+    color: white;
+}
+
+section.main .conteudo-header h1 {
+    font-size: 44px;
+}
+
+section.main .conteudo-header span {
+    color: #2692FF;
+}
+
+section.main .conteudo-header p {
+    font-weight: lighter;
+}
+
+section.main .conteudo-header a {
+    width: 177px;
+    height: 50px;
+    background-color: #2692FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.planos {
+    width: 100%;
+}
+
+section.planos .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section.planos .title-planos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #ccc;
+}
+
+section.planos .title-planos h2 {
+    color: #2692FF;
+    font-weight: lighter;
+    border-top: 2px solid #2692FF;
+}
+
+section.planos .content-planos {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 40px auto;
+    justify-content: space-around;
+}
+
+section.planos .content-planos-item {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+section.planos .title-content-planos-item {
+    color: white;
+    background-color: #2692FF;
+    font-weight: lighter;
+    padding: 12px 0;
+    text-align: center;
+}
+
+section.planos .corpo-content-planos-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+section.planos .corpo-content-planos-item div {
+    margin: 15px;
+    color: #ccc;
+}
+
+section.planos .price-content-planos-item {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #ccc;
+    border-top: 1px solid #ccc;
+    margin: 0 100px;
+    padding: 20px;
+}
+
+section.sobre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #0f0f0f;
+}
+
+section.sobre .container {
+    margin: 40px auto;
+    max-width: 1280px;
+    padding: 0 4%;
+}
+
+section.sobre .container h2, section.sobre .container p {
+    color: white;
+}
+
+section.sobre .container h2 {
+    text-align: center;
+}
+
+section.sobre .container h2 span {
+    color: #2692FF;
+}
+
+section.sobre .container h2, section.sobre .container p {
+    margin: 20px 0;
+}
+
+section.form-time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+}
+
+section.form-time .container {
+    width: 100%;
+    display: flex;
+    margin: 40px auto;
+    max-width: 1280px;
+    padding: 0 4%;
+}
+
+section.form-time form, section.form-time .time{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+}
+
+section.form-time form {
+    padding-right: 20px;
+}
+
+section.form-time form h2, .form-time form input, .form-time form textarea {
+    margin: 10px 0;
+    width: 100% !important;
+    height: 40px;
+    padding: 10px;
+}
+
+section.form-time form h2 {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+section.form-time form input, .form-time form textarea {
+    border: 1px solid #ccc;
+}
+
+section.form-time form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+section.form-time form button {
+    margin: 10px 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #2692FF;
+    color: white;
+}
+
+section.form-time .time {
+    padding-left: 20px;
+    display: flex;
+    height: 100%;
+}
+
+section.form-time .title-time {
+    width: 100% !important;
+    margin-bottom: 16px;
+}
+
+section.form-time .title-time h2{
+    margin: 10px 0;
+}
+
+section.form-time .nosso-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.form-time .nosso-time > div {
+    width: 45%;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 2px solid #0f0f0f;
+    border-right: 2px solid #0f0f0f;
+}
+
+section.form-time .nosso-time div .nosso-time-title {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+section.form-time .nosso-time div .nosso-time-title h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section.form-time .nosso-time div .nosso-time-title p{
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    background-color: #0f0f0f;
+}
+
+footer h4 {
+    color: white;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    section.planos .content-planos {
+        max-width: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    section.planos .content-planos-item {
+        margin: 20px 0;
+    }
+
+    section.form-time .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.form-time form, section.form-time .time{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.form-time form {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    section.form-time form  h2 {
+        justify-content: space-around;
+    }
+
+    section.form-time form button {
+        width: 200px;
+        height: 60px;
+    }
+
+    section.form-time .time {
+        padding-left: 0;
+    }
+
+    section.form-time .title-time h2{
+        text-align: center;
+    }
+
+    section.form-time .nosso-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section.form-time .nosso-time > div {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+}
